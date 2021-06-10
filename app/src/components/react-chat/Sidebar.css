@@ -1,0 +1,108 @@
+.chat_sidebar {
+  color: white;
+  background-color: var(--app-color);
+  border-top: 1px solid #49274b;
+  max-width: 270px;
+  flex: 0.3;
+  height: 100vh;
+  overflow-y: scroll;
+}
+.chat_sidebar > hr {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #49274b;
+}
+
+.sidebar_header {
+  display: flex;
+  border-bottom: 1px solid #49274b;
+  padding-bottom: 10px;
+  padding: 13px;
+}
+
+.sidebar_info {
+  flex: 1;
+}
+
+.sidebar_info > h2 {
+  font-size: 15px;
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.sidebar_info > h3 {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+.sidebar_info > h3 > .MuiSvgIcon-root {
+  font-size: 14px;
+  margin-top: 1px;
+  margin-right: 2px;
+  color: green;
+}
+
+.sidebar_header > .MuiSvgIcon-root {
+  padding: 8px;
+  color: #49274b;
+  font-size: 33px;
+  background-color: white;
+  border-radius: 999px;
+}
+
+/* .fiEdit {
+  padding: 8px;
+  color: #3f0e40;
+  font-size: 28px;
+  background-color: white;
+  border-radius: 100%;
+  height: 35px;
+  width: 38px;
+} */
+
+.wrapper {
+  /* display: inline-flex; */
+  position: relative;
+  flex-direction: column;
+}
+
+.dropToggler {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropToggler > .arrow {
+  margin-left: 10px;
+}
+
+.displayArea {
+  position: relative;
+}
+
+.displayArea > .children {
+  position: absolute;
+  left: 1px;
+  top: 8px;
+  min-width: 200px;
+  min-height: 200px;
+  background: #bdb8b8;
+  box-shadow: rgba(0, 0, 0, 0.4) 0 1px 3px;
+  display: block;
+}
+
+.users h3{
+  padding-left: 10px;
+}
+
+/* .plus {
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.3s all;
+}
+
+span:hover .plus {
+  opacity: 1;
+  transition: 0.3s all;
+} */

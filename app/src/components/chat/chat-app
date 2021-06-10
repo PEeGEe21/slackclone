@@ -1,0 +1,44 @@
+import React from 'react';
+import { Chat, Channel, ChannelList, Window } from 'stream-chat-react';
+import { ChannelHeader, MessageList } from 'stream-chat-react';
+import { MessageInput, Thread } from 'stream-chat-react';
+import { StreamChat } from 'stream-chat';
+
+import 'stream-chat-react/dist/css/index.css';
+
+// 823endhyzn93 
+// eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYXV0dW1uLWJhbmQtMCJ9.r44OzoaYLe4XoQqC8R79QaTagoF4GNprJQBrU2OTv2g 
+
+const chatClient = new StreamChat('823endhyzn93');
+const userToken = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoiYXV0dW1uLWJhbmQtMCJ9.r44OzoaYLe4XoQqC8R79QaTagoF4GNprJQBrU2OTv2g';
+
+chatClient.setUser(
+  {
+    id: 'autumn-band-0',
+    name: 'Autumn band',
+    image: 'https://getstream.io/random_png/?id=autumn-band-0&name=Autumn+band'  },
+  userToken,
+);
+
+const filters = { type: 'messaging', members: { $in: ['autumn-band-0'] } };
+const sort = { last_message_at: -1 };
+const channels = chatClient.queryChannels(filters, sort);
+
+const chatApp = () => (
+  <Chat client={chatClient} theme={'team dark'}>
+    <ChannelList
+      filters={filters}
+      sort={sort}
+    />
+    <Channel>
+      <Window>
+        <ChannelHeader />
+        <MessageList />
+        <MessageInput />
+      </Window>
+      <Thread />
+    </Channel>
+  </Chat>
+);
+
+export default chatApp; 

@@ -1,0 +1,119 @@
+.chatBox {
+  flex: 0.7;
+  flex-grow: 1;
+  overflow-y: scroll;
+  padding-bottom: 10px;
+  height: 100vh;
+  background: #ffffff;
+}
+
+.chat_headerLeft {
+  flex-shrink: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.chat_channelName h4,
+.chat_channelName h4 .MuiSvgIcon-root {
+  font-size: 13px;
+  line-height: 1.38463;
+}
+.chat_channelName {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  min-width: 20px;
+  max-width: 100%;
+}
+
+.chat_star .MuiSvgIcon-root {
+  flex-shrink: 1;
+  min-width: 20px;
+}
+.chat_star .MuiSvgIcon-root {
+  margin-left: 4px;
+  border: thin solid transparent;
+  transition: border-color 0.16s cubic-bezier(0.36, 0.19, 0.29, 1);
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 13px;
+  line-height: 1.38463;
+  height: 20px;
+}
+.p-ia__view_header__spacer {
+  flex: 1;
+}
+
+.chat_button--calls .MuiSvgIcon-root,
+.chat_button--info .MuiSvgIcon-root {
+  position: relative;
+  display: inline-flex;
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.chat_button--calls,
+.chat_button--info {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin-left: 4px;
+  padding: 8px;
+  border-radius: 4px;
+  color: rgba(var(--sk_foreground_max, 29, 28, 29), 0.7);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.38463;
+  height: 36px;
+  width: 36px;
+  cursor: pointer;
+}
+
+.chat_button--calls:hover,
+.chat_button--info:hover {
+
+background: rgba( 29,28,29,.04)
+}
+.chat_header {
+  /* display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid lightgrey; */
+
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px 0 8px;
+  padding-left: 8px;
+  border-bottom: 1px solid rgba(var(--sk_foreground_low, 29, 28, 29), 0.13);
+  flex-shrink: 0;
+}
+
+.chat_channelName {
+  text-transform: lowercase;
+  display: flex;
+}
+
+/* .chat_channelName > .MuiSvgIcon-root {
+  margin-left: 10px;
+  font-size: 18px;
+}
+
+.chat_headerRight > p {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chat_headerRight > p > .MuiSvgIcon-root {
+  margin-right: 5px;
+  font-size: 16px;
+} */

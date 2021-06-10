@@ -1,0 +1,99 @@
+.chat_main_box {
+  background: rgb(212, 211, 211);
+  position: fixed;
+  width: 81.7%;
+  bottom: 0;
+}
+
+.chatInput {
+  border-radius: 20px;
+  padding-top: 20px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+}
+
+.chatInput form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-width: 0;
+}
+
+.chatInput form input,
+.chatInput form textarea {
+  /* position: absolute; */
+  /* bottom: 30px;
+    width: 70%;
+    border: 1px solid gray;
+    border-radius:3px;
+    padding: 20px;
+    min-height: 22px; */
+
+  background: rgba(var(--sk_primary_background, 255, 255, 255), 1);
+  border-radius: 4px;
+  border-width: 1px;
+  border-color: rgba(var(--sk_foreground_high, 29, 28, 29), 0.5);
+  min-height: 42px;
+  min-width: 1px;
+  padding-left: 10px;
+  padding-top: 0;
+  padding-bottom: 4px;
+  padding-right: 0;
+  flex: 1;
+  /* overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto; */
+}
+
+/* .chatInput > form > button {
+  display: none !important;
+} */
+
+.emoji-mart-preview-emoji,
+.emoji-mart-title-label {
+  display: none;
+}
+
+.submit_button {
+  cursor: pointer;
+  /* background: #003699; */
+  /* border: 1px solid #003699 !important; */
+
+  background: #49274b;
+  border: 1px solid #49274b !important;
+  color: #fff !important;
+  border-radius: 5px;
+  padding-left: 2rem !important;
+  padding-right: 2rem !important;
+  padding-bottom: 1rem !important;
+  padding-top: 1rem !important;
+  display: inline-block;
+  font-weight: 400;
+  color: #212529;
+  text-align: center;
+  vertical-align: middle;
+  margin-left: 5px;
+  user-select: none;
+  font-size: 1rem;
+  line-height: 1.5;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    -webkit-box-shadow 0.15s ease-in-out;
+}
+
+.submit_button:hover,
+.submit_button:active,
+.submit_button:focus {
+  outline: none;
+}
+.submit_button:focus,
+.submit_button.focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+/* button,
+input {
+  overflow: visible;
+} */
